@@ -56,3 +56,10 @@ consultarButton.addEventListener('click', async () => {
 
     }
 });
+
+cepForm.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        consultarButton.click();
+    }
+});
