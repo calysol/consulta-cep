@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-                <h2>CONSULTE SEU ENDEREÇO:</h2>
-                <form id="cepForm">
-                    <div class="error" id="message"></div>
-                    <input type="text" id="cep" required placeholder="CEP" class="input">
-                    <input type="text" id="endereco" placeholder="Endereço" class="input">
-                    <input type="text" id="bairro" placeholder="Bairro" class="input">
-                    <input type="text" id="cidade" placeholder="Cidade" class="input">
-                    <div class="loading-container">
-                        <input type="button" id="consultar" value="Consultar" class="button">
-                        <div id="loading">Carregando dados...</div>
-                    </div>
-                </form>
-                </div>
-        </div>
-        <script src="index.js"></script>
+
+    <div class="box">
+        <h2>CONSULTE SEU ENDEREÇO:</h2>
+
+        <form id="cepForm">
+            <div class="error" id="message"></div>
+
+            <input type="text" id="cep" required placeholder="CEP" class="input">
+
+            <input type="text" id="endereco" placeholder="Endereço" class="input" readonly>
+            <input type="text" id="bairro" placeholder="Bairro" class="input" readonly>
+            <input type="text" id="cidade" placeholder="Cidade" class="input" readonly>
+
+            <div class="loading-container">
+                <input type="button" id="consultar" value="Consultar" class="button">
+                <div id="loading">Carregando dados...</div>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
