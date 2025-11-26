@@ -1,0 +1,95 @@
+body{
+    background-image: url("image/fundobranco.jpg");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    }
+    
+.box .input, .box .button {
+        font-size: 1;
+    }
+
+.box{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(203, 228, 236);
+    border-color: gray;
+    padding: 0px 15px 10px 8px;
+    
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .box .input, .box .button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .box .button {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+.box .input{
+    width: 90%;
+    border-color: gray;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    height: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: gray;
+}
+
+.box .input:hover{
+    border-color: lightblue;
+}
+
+.box .button:hover{
+    cursor: pointer;
+    border-color: lightblue;
+}
+
+.box .button{
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border-color: gray;
+    font-family: sans-serif;
+    margin-left: 15px;
+    background-color: white;
+    border-color: gray;
+}
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#loading {
+    display: none;
+    font-size: 1.2em;
+    color: rgb(0, 40, 53);
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
